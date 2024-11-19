@@ -1,7 +1,7 @@
 # Sahla V H
-# Helping Business build strategic data solutions
+### Helping Business build strategic data solutions
 ## Cloud Data Engineer 
-### TECHNICAL SKILLS
+### Technical Skills
 • Languages/Scripting: Python, SQL, PySpark, Terraform.
 • Public Cloud Platform: GCP, Azure.
 • Data Integration Tools: Google Cloud Composer, Google Dataplex, Azure Data Factory, Databricks.
