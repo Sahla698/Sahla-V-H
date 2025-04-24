@@ -48,6 +48,16 @@ Following Airflow DAGs were developed for the entire framework:
 6. Alert Mechanism
 For any entity load job failure, error message is being sent to GCP Cloud logging services from the DAG. Load based alerts has been created to pick the job failure from logging service. Then the alert policy creates an incident and send email notification. Incidents will auto close if not acknowledged within 7 days. Notification channels could be configured as per the need.
 
+Parameterized every DAG to make it compatible for the transition from dev to preprod, then to production environment. Equipped every DAG to take environment variable as an input argument.
+7. Built Reconciliation framework for every entity, by taking source-target counts.
+8. Loaded the extract from Reltio back into GCP, to compare and reconcile data between stage3 and Reltio. This involves converting extracted data in the form of flattened csv back into nested structures.
+9. Built a DAG to update the tokenized data and replace it with detokenized data provided through csv files. CSV files were loaded into a BigQuery table, then ran the update statements via BQ client API being called via a Python function.
+10. Was able to act as a good team player and to coordinate, communicate strategies between client, teammates, etc.
+11. Exported Xref data from GBQ tables into GCS, by segregating it into different csv files for each sourcesystem. Developed a file splitting mechanism using for loop and placed the splitted files for each entity like person, Org and household in separate folders.
+
+
+
+
 
 **Associate Analyst - Ernst & Young (April 2021 -June 2023)**
 Tech stack: Pyspark, Databricks, PowerBI, Microsoft Azure , MS SQL, Google Dataplex,Dataproc, Terraform.
